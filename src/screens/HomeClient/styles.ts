@@ -14,7 +14,10 @@ export const Image = styled.Image`
 `;
 
 export const Content = styled.View`
-  flex: 1;
+  flex-direction: row;
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.Text`
@@ -22,6 +25,7 @@ export const Title = styled.Text`
   color: ${({theme}) => theme.COLORS.WHITE};
   font-weight: bold;
   text-align: justify;
+  margin-right: 8px;
 `;
 
 export const Subtitle = styled.Text`

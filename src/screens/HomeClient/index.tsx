@@ -1,10 +1,14 @@
-import {Text} from 'react-native';
-import {Container} from './styles';
+import bg from '../../assets/bg-preview .png';
+import {Container, Content, Image, Subtitle, Title} from './styles';
 
 export function HomeClient() {
   return (
     <Container>
-      <Text>Go Pizza</Text>
+      <Image source={bg} resizeMode="contain" />
+      <Content>
+        <Title>GoPizza</Title>
+        <Subtitle>A sua comanda de pedidos digital</Subtitle>
+      </Content>
     </Container>
   );
 }

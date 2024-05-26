@@ -28,13 +28,17 @@ export const Title = styled.Text`
   color: ${({theme}) => theme.COLORS.WHITE};
   font-weight: bold;
   text-align: justify;
+  margin-left: 32px;
   margin-right: 8px;
 `;
 
 export const Subtitle = styled.Text`
+  flex: 1;
   font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
   color: ${({theme}) => theme.COLORS.WHITE};
   font-weight: 400;
+  margin-left: 24px;
+  margin-right: 36px;
   text-align: justify;
 `;
 

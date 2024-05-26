@@ -3,14 +3,17 @@ import {styled} from 'styled-components/native';
 export const Container = styled.View`
   background-color: ${({theme}) => theme.COLORS.RED_2};
   flex: 1;
-  padding: 120px;
   padding-bottom: 0;
   gap: 8px;
 `;
 
 export const Image = styled.Image`
   flex: 1;
+  justify-content: center;
   align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 95%;
 `;
 
 export const Content = styled.View`
@@ -33,4 +36,11 @@ export const Subtitle = styled.Text`
   color: ${({theme}) => theme.COLORS.WHITE};
   font-weight: 400;
   text-align: justify;
+`;
+
+export const FooterContent = styled.View`
+  flex-direction: row;
+  margin-bottom: 48px;
+  justify-content: center;
+  align-items: center;
 `;

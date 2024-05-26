@@ -19,6 +19,11 @@ export const Container = styled.Pressable<Props>`
 
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    background-color: ${({theme}) => theme.COLORS.GRAY_2};
+    opacity: 0.5;
+  }
 `;
 
 export const Label = styled.Text`

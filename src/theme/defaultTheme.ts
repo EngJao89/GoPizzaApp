@@ -9,8 +9,6 @@ export default {
     RED_2: '#B83341',
     RED_1: '#E03F50',
 
-    TRANSPARENT: '#000000',
-
     WHITE: '#FFFFFF',
   },
   FONT_SIZE: {

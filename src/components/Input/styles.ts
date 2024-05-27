@@ -7,6 +7,7 @@ export const Container = styled.View`
   border-color: ${({theme}) => theme.COLORS.GRAY_1};
   margin-left: 32px;
   margin-right: 32px;
+  margin-bottom: 8px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 16px;
@@ -17,5 +18,5 @@ export const Container = styled.View`
 
 export const TextInput = styled.TextInput`
   flex: 1;
-  color: ${({theme}) => theme.COLORS.GRAY_1};
+  color: ${({theme}) => theme.COLORS.GRAY_2};
 `;

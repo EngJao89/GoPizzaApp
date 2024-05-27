@@ -11,8 +11,8 @@ export function Input({isLoading = false, ...rest}: Props) {
 
   return (
     <Container>
-      <TextInput placeholderTextColor={theme.COLORS.GRAY_1} {...rest} />
-      {isLoading && <ActivityIndicator color={theme.COLORS.GRAY_1} />}
+      <TextInput placeholderTextColor={theme.COLORS.GRAY_2} {...rest} />
+      {isLoading && <ActivityIndicator color={theme.COLORS.GRAY_2} />}
     </Container>
   );
 }

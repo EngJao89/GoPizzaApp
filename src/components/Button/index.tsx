@@ -1,7 +1,7 @@
-import {PressableProps} from 'react-native';
+import {TouchableOpacityProps} from 'react-native';
 import {ButtonColorStyleProps, Container, Label} from './styles';
 
-type Props = PressableProps & {
+type Props = TouchableOpacityProps & {
   name: string;
   color?: ButtonColorStyleProps;
 };

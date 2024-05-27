@@ -6,7 +6,7 @@ type Props = {
   color?: ButtonColorStyleProps;
 };
 
-export const Container = styled.Pressable<Props>`
+export const Container = styled.TouchableOpacity<Props>`
   width: '100%';
   padding: 16px;
   margin: 4px;
@@ -21,7 +21,7 @@ export const Container = styled.Pressable<Props>`
   justify-content: center;
 
   &:hover {
-    background-color: ${({theme}) => theme.COLORS.GRAY_2};
+    background-color: ${({theme}) => theme.COLORS.GRAY_3};
     opacity: 0.5;
   }
 `;

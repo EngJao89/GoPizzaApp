@@ -8,7 +8,7 @@ export const Container = styled.View`
 
 export const Title = styled.Text`
   font-size: ${({theme}) => theme.FONT_SIZE.XXL}px;
-  color: ${({theme}) => theme.COLORS.GRAY_1};
+  color: ${({theme}) => theme.COLORS.GRAY_2};
   font-weight: bold;
   margin-left: 24px;
   margin-right: 16px;
@@ -18,7 +18,7 @@ export const Title = styled.Text`
 export const Subtitle = styled.Text`
   flex: 1;
   font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
-  color: ${({theme}) => theme.COLORS.GRAY_2};
+  color: ${({theme}) => theme.COLORS.GRAY_3};
   font-weight: 400;
   margin-left: 24px;
   margin-right: 36px;

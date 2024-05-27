@@ -8,7 +8,7 @@ type Props = {
 
 export const Container = styled.Pressable<Props>`
   width: '100%';
-  padding: 12px 8px;
+  padding: 16px;
   margin: 4px;
   border-radius: 6px;
   border: 1px solid;

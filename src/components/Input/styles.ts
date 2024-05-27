@@ -11,7 +11,6 @@ export const Container = styled.View`
   padding-bottom: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  margin-top: 40px;
   font-size: ${({theme}) => theme.FONT_SIZE.MD}px;
   flex-direction: row;
 `;

@@ -12,7 +12,7 @@ export const Title = styled.Text`
   font-weight: bold;
   margin-left: 24px;
   margin-right: 16px;
-  margin-top: 128px;
+  margin-top: 48px;
 `;
 
 export const Subtitle = styled.Text`
@@ -26,5 +26,8 @@ export const Subtitle = styled.Text`
 `;
 
 export const Content = styled.View`
-  margin: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+  margin-bottom: 96px;
 `;

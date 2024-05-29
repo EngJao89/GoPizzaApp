@@ -31,3 +31,17 @@ export const Content = styled.View`
   margin-top: 24px;
   margin-bottom: 96px;
 `;
+
+export const ForgotButton = styled.TouchableOpacity`
+  flex-direction: row-reverse;
+  align-items: right;
+  background-color: ${({theme}) => theme.COLORS.WHITE};
+  padding: 8px;
+  margin-right: 24px;
+`;
+
+export const Label = styled.Text`
+  font-size: ${({theme}) => theme.FONT_SIZE.MD}px;
+  color: ${({theme}) => theme.COLORS.GRAY_2};
+  font-weight: 400;
+`;

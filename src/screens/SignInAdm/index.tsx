@@ -1,7 +1,14 @@
 import {Button} from '../../components/Button';
 import {ButtonIcon} from '../../components/ButtonIcon';
 import {Input} from '../../components/Input';
-import {Container, Content, Subtitle, Title} from './styles';
+import {
+  Container,
+  Content,
+  ForgotButton,
+  Label,
+  Subtitle,
+  Title,
+} from './styles';
 
 export function SignInAdm() {
   return (
@@ -14,6 +21,10 @@ export function SignInAdm() {
       <Input placeholder="Email" />
 
       <Input placeholder="Senha" />
+
+      <ForgotButton>
+        <Label>Esqueci Minha Senha</Label>
+      </ForgotButton>
 
       <Content>
         <Button color="SECONDARY" name="Entrar" />

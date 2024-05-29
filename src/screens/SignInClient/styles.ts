@@ -11,18 +11,19 @@ export const Image = styled.Image`
   flex: 1;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+  margin-left: 54px;
   margin-right: 12px;
-  width: 95%;
+  width: 75%;
 `;
 
 export const Title = styled.Text`
   font-size: ${({theme}) => theme.FONT_SIZE.XXL}px;
   color: ${({theme}) => theme.COLORS.WHITE};
   font-weight: bold;
-  margin-left: 24px;
+  margin-left: 32px;
   margin-right: 16px;
   margin-top: 48px;
+  margin-bottom: 12px;
 `;
 
 export const ForgotButton = styled.TouchableOpacity`
@@ -44,4 +45,25 @@ export const Footer = styled.View`
   margin-bottom: 48px;
   justify-content: center;
   align-items: center;
+`;
+
+export const InputContent = styled.View`
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: ${({theme}) => theme.COLORS.WHITE};
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: ${({theme}) => theme.FONT_SIZE.MD}px;
+  flex-direction: row;
+`;
+
+export const TextInput = styled.TextInput`
+  flex: 1;
+  color: ${({theme}) => theme.COLORS.WHITE};
 `;

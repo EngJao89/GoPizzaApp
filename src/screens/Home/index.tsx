@@ -11,7 +11,7 @@ import {
 } from './styles';
 import bg from '../../assets/home-logo.png';
 
-export function HomeClient() {
+export function Home() {
   const navigation = useNavigation();
 
   return (
@@ -22,10 +22,10 @@ export function HomeClient() {
         <Subtitle>A sua comanda de pedidos digital</Subtitle>
       </Content>
       <Content>
-        <Button style={{width: 124}} color="SECONDARY" name="Nº da mesa" />
+        {/* <Button style={{width: 124}} color="SECONDARY" name="Nº da mesa" /> */}
         <Button
-          style={{width: 224}}
-          name="Entrar"
+          style={{width: 348}}
+          name="Entrar como Cliente"
           onPress={() => navigation.navigate('client')}
         />
       </Content>

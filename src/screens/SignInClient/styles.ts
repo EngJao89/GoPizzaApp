@@ -7,6 +7,13 @@ export const Container = styled.View`
   gap: 8px;
 `;
 
+export const Content = styled.View`
+  flex-direction: row;
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Image = styled.Image`
   flex: 1;
   justify-content: center;
@@ -22,7 +29,7 @@ export const Title = styled.Text`
   font-weight: bold;
   margin-left: 32px;
   margin-right: 16px;
-  margin-top: 48px;
+  margin-top: 12px;
   margin-bottom: 12px;
 `;
 

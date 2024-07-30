@@ -4,6 +4,7 @@ import {Input} from '../../components/Input';
 import {
   Container,
   Content,
+  Footer,
   ForgotButton,
   Label,
   Subtitle,
@@ -29,6 +30,10 @@ export function SignInAdm() {
       <Content>
         <Button color="SECONDARY" name="Entrar" />
       </Content>
+
+      <Footer>
+        <Button style={{width: 370}} color="SECONDARY" name="Cadastrar" />
+      </Footer>
     </Container>
   );
 }

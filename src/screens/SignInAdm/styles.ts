@@ -29,13 +29,12 @@ export const Content = styled.View`
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 24px;
-  margin-bottom: 96px;
+  margin-bottom: 16px;
 `;
 
 export const ForgotButton = styled.TouchableOpacity`
   flex-direction: row-reverse;
   align-items: right;
-  background-color: ${({theme}) => theme.COLORS.WHITE};
   padding: 8px;
   margin-right: 24px;
 `;
@@ -44,4 +43,11 @@ export const Label = styled.Text`
   font-size: ${({theme}) => theme.FONT_SIZE.MD}px;
   color: ${({theme}) => theme.COLORS.GRAY_2};
   font-weight: 400;
+`;
+
+export const Footer = styled.View`
+  flex-direction: row;
+  margin-bottom: 48px;
+  justify-content: center;
+  align-items: center;
 `;

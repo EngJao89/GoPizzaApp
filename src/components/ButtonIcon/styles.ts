@@ -6,7 +6,6 @@ export const Container = styled.View`
   align-items: left;
   margin-left: 24px;
   margin-top: 60px;
-  background-color: ${({theme}) => theme.COLORS.WHITE};
 `;
 
 export const StyledButton = styled.TouchableOpacity`

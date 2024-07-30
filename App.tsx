@@ -3,14 +3,13 @@ import {ThemeProvider} from 'styled-components';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import defaultTheme from './src/theme/defaultTheme';
-// import {SignInAdm} from './src/screens/SignInAdm';
-import {SignInClient} from './src/screens/SignInClient';
+import { Routes } from './src/routes';
 
 function App() {
   return (
     <SafeAreaProvider style={{flex: 1}}>
       <ThemeProvider theme={defaultTheme}>
-        <SignInClient />
+        <Routes />
       </ThemeProvider>
     </SafeAreaProvider>
   );

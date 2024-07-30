@@ -24,7 +24,7 @@ export function AppRoutes() {
         name="home"
         component={HomeClient}
         options={{
-          statusBarStyle: 'auto',
+          statusBarStyle: 'light',
           statusBarTranslucent: true,
           statusBarColor: 'transparent',
         }}
@@ -34,7 +34,7 @@ export function AppRoutes() {
         name="adm"
         component={SignInAdm}
         options={{
-          statusBarStyle: 'auto',
+          statusBarStyle: 'light',
           statusBarTranslucent: true,
           statusBarColor: 'transparent',
         }}

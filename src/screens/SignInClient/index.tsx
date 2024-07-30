@@ -2,6 +2,7 @@ import bg from '../../assets/home-logo.png';
 import {Button} from '../../components/Button';
 import {
   Container,
+  Content,
   Footer,
   ForgotButton,
   Image,
@@ -29,8 +30,12 @@ export function SignInClient() {
         <Label>Esqueci Minha Senha</Label>
       </ForgotButton>
 
-      <Footer>
+      <Content>
         <Button style={{width: 370}} name="Entrar" />
+      </Content>
+
+      <Footer>
+        <Button style={{width: 370}} name="Cadastrar" color="SECONDARY" />
       </Footer>
     </Container>
   );

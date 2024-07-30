@@ -1,5 +1,5 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {HomeClient} from '../screens/HomeClient';
+import {Home} from '../screens/Home';
 import {SignInAdm} from '../screens/SignInAdm';
 import {SignInClient} from '../screens/SignInClient';
 
@@ -22,9 +22,9 @@ export function AppRoutes() {
       }}>
       <Screen
         name="home"
-        component={HomeClient}
+        component={Home}
         options={{
-          statusBarStyle: 'light',
+          statusBarStyle: 'auto',
           statusBarTranslucent: true,
           statusBarColor: 'transparent',
         }}

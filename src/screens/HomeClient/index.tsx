@@ -1,4 +1,5 @@
-import bg from '../../assets/home-logo.png';
+import {useNavigation} from '@react-navigation/native';
+
 import {Button} from '../../components/Button';
 import {
   Container,
@@ -8,8 +9,11 @@ import {
   Subtitle,
   Title,
 } from './styles';
+import bg from '../../assets/home-logo.png';
 
 export function HomeClient() {
+  const navigation = useNavigation();
+
   return (
     <Container>
       <Image source={bg} resizeMode="contain" />
@@ -19,13 +23,18 @@ export function HomeClient() {
       </Content>
       <Content>
         <Button style={{width: 124}} color="SECONDARY" name="Nº da mesa" />
-        <Button style={{width: 224}} name="Entrar" />
+        <Button
+          style={{width: 224}}
+          name="Entrar"
+          onPress={() => navigation.navigate('client')}
+        />
       </Content>
       <FooterContent>
         <Button
           style={{width: 348}}
           color="SECONDARY"
           name="Entrar como Admin"
+          onPress={() => navigation.navigate('adm')}
         />
       </FooterContent>
     </Container>

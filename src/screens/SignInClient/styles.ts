@@ -7,9 +7,16 @@ export const Container = styled.View`
   gap: 8px;
 `;
 
+export const BackContent = styled.View`
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 48px;
+  margin-bottom: 16px;
+`;
+
 export const Content = styled.View`
   flex-direction: row;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   justify-content: center;
   align-items: center;
 `;

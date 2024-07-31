@@ -1,6 +1,11 @@
-import bg from '../../assets/home-logo.png';
+import {useNavigation} from '@react-navigation/native';
+import {useTheme} from 'styled-components/native';
+import {ArrowLeft} from 'phosphor-react-native';
+
 import {Button} from '../../components/Button';
+import {IconButton} from '../../components/IconButton';
 import {
+  BackContent,
   Container,
   Content,
   Footer,
@@ -12,9 +17,24 @@ import {
   Title,
 } from './styles';
 
+import bg from '../../assets/home-logo.png';
+
 export function SignInClient() {
+  const {COLORS} = useTheme();
+  const navigation = useNavigation();
+
   return (
     <Container>
+      <BackContent>
+        <IconButton
+          icon={ArrowLeft}
+          size={24}
+          color={COLORS.WHITE}
+          weight="regular"
+          onPress={() => navigation.goBack()}
+        />
+      </BackContent>
+
       <Image source={bg} resizeMode="contain" />
       <Title>Login</Title>
 

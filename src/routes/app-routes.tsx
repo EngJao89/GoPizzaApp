@@ -11,14 +11,9 @@ export function AppRoutes() {
       initialRouteName="home"
       screenOptions={{
         headerShown: false,
-        animation: 'slide_from_right',
-        animationDuration: 250,
         statusBarStyle: 'auto',
         statusBarTranslucent: true,
         statusBarColor: 'transparent',
-
-        // cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
-        // ...TransitionPresets.SlideFromRightIOS,
       }}>
       <Screen
         name="home"
@@ -34,7 +29,7 @@ export function AppRoutes() {
         name="adm"
         component={SignInAdm}
         options={{
-          statusBarStyle: 'light',
+          statusBarStyle: 'auto',
           statusBarTranslucent: true,
           statusBarColor: 'transparent',
         }}
@@ -44,7 +39,7 @@ export function AppRoutes() {
         name="client"
         component={SignInClient}
         options={{
-          statusBarStyle: 'light',
+          statusBarStyle: 'auto',
           statusBarTranslucent: true,
           statusBarColor: 'transparent',
         }}

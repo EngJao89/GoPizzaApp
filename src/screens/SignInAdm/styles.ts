@@ -25,11 +25,18 @@ export const Subtitle = styled.Text`
   margin-top: 12px;
 `;
 
+export const BackContent = styled.View`
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 48px;
+  margin-bottom: 16px;
+`;
+
 export const Content = styled.View`
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 `;
 
 export const ForgotButton = styled.TouchableOpacity`

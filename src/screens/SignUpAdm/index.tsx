@@ -5,18 +5,9 @@ import {ArrowLeft} from 'phosphor-react-native';
 import {Button} from '../../components/Button';
 import {IconButton} from '../../components/IconButton';
 import {Input} from '../../components/Input';
-import {
-  BackContent,
-  Container,
-  Content,
-  Footer,
-  ForgotButton,
-  Label,
-  Subtitle,
-  Title,
-} from './styles';
+import {BackContent, Container, Content, Subtitle, Title} from './styles';
 
-export function SignInAdm() {
+export function SignUpAdm() {
   const {COLORS} = useTheme();
   const navigation = useNavigation();
 
@@ -32,29 +23,24 @@ export function SignInAdm() {
         />
       </BackContent>
 
-      <Title>Acesso Administrativo</Title>
-      <Subtitle>Insira suas credenciais abaixo.</Subtitle>
+      <Title>Cadastro Administrativo</Title>
+      <Subtitle>Insira seus dados abaixo.</Subtitle>
+
+      <Input placeholder="Nome" />
+
+      <Input placeholder="Sobrenome" />
 
       <Input placeholder="Email" />
 
+      <Input placeholder="Telefone" />
+
       <Input placeholder="Senha" />
 
-      <ForgotButton>
-        <Label>Esqueci Minha Senha</Label>
-      </ForgotButton>
+      <Input placeholder="Confirme Senha" />
 
       <Content>
-        <Button color="SECONDARY" name="Entrar" />
+        <Button style={{width: 370}} color="SECONDARY" name="Enviar" />
       </Content>
-
-      <Footer>
-        <Button
-          style={{width: 370}}
-          color="SECONDARY"
-          name="Cadastrar"
-          onPress={() => navigation.navigate('signupadm')}
-        />
-      </Footer>
     </Container>
   );
 }

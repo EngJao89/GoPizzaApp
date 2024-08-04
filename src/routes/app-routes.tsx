@@ -1,8 +1,10 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
 import {Home} from '../screens/Home';
 import {SignInAdm} from '../screens/SignInAdm';
 import {SignInClient} from '../screens/SignInClient';
 import {SignUpAdm} from '../screens/SignUpAdm';
+import {SignUpClient} from '../screens/SignUpClient';
 
 const {Navigator, Screen} = createNativeStackNavigator();
 
@@ -49,6 +51,16 @@ export function AppRoutes() {
       <Screen
         name="signupadm"
         component={SignUpAdm}
+        options={{
+          statusBarStyle: 'auto',
+          statusBarTranslucent: true,
+          statusBarColor: 'transparent',
+        }}
+      />
+
+      <Screen
+        name="signupclient"
+        component={SignUpClient}
         options={{
           statusBarStyle: 'auto',
           statusBarTranslucent: true,

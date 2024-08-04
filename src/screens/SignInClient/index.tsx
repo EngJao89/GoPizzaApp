@@ -55,7 +55,12 @@ export function SignInClient() {
       </Content>
 
       <Footer>
-        <Button style={{width: 370}} name="Cadastrar" color="SECONDARY" />
+        <Button
+          style={{width: 370}}
+          name="Cadastrar"
+          color="SECONDARY"
+          onPress={() => navigation.navigate('signupclient')}
+        />
       </Footer>
     </Container>
   );

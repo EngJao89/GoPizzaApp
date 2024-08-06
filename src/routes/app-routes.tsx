@@ -5,7 +5,7 @@ import {SignInAdm} from '../screens/SignInAdm';
 import {SignInClient} from '../screens/SignInClient';
 import {SignUpAdm} from '../screens/SignUpAdm';
 import {SignUpClient} from '../screens/SignUpClient';
-import {Products} from '../screens/Products';
+import {Menu} from '../screens/Menu';
 
 const {Navigator, Screen} = createNativeStackNavigator();
 
@@ -70,8 +70,8 @@ export function AppRoutes() {
       />
 
       <Screen
-        name="products"
-        component={Products}
+        name="menu"
+        component={Menu}
         options={{
           statusBarStyle: 'auto',
           statusBarTranslucent: true,

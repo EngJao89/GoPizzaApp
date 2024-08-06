@@ -54,7 +54,7 @@ export function SignInClient() {
         <Button
           style={{width: 370}}
           name="Entrar"
-          onPress={() => navigation.navigate('products')}
+          onPress={() => navigation.navigate('menu')}
         />
       </Content>
 

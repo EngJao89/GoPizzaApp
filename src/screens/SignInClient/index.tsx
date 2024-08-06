@@ -51,7 +51,11 @@ export function SignInClient() {
       </ForgotButton>
 
       <Content>
-        <Button style={{width: 370}} name="Entrar" />
+        <Button
+          style={{width: 370}}
+          name="Entrar"
+          onPress={() => navigation.navigate('products')}
+        />
       </Content>
 
       <Footer>

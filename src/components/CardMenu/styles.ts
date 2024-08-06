@@ -1,8 +1,14 @@
 import {styled} from 'styled-components/native';
 
-export const Container = styled.View`
-  margin: 16px;
-  position: relative;
+export const Container = styled.TouchableOpacity`
+  border: 1px solid ${({theme}) => theme.COLORS.GRAY_3};
+  border-radius: 6px;
+  padding: 24px;
+  flex-direction: row;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
 `;
 
 export const Content = styled.View`
@@ -27,7 +33,7 @@ export const Description = styled.Text`
 `;
 
 export const Image = styled.Image`
-  margin-top: -32px;
+  margin-right: 4px;
   height: 96px;
   width: 96px;
 `;
@@ -36,4 +42,22 @@ export const Price = styled.View`
   flex-direction: row;
   align-items: baseline;
   gap: 4px;
+`;
+
+export const Label = styled.Text`
+  color: ${({theme}) => theme.COLORS.GRAY_3};
+  font-size: ${({theme}) => theme.FONT_SIZE.XS};
+  font-weight: 400;
+`;
+
+export const Currency = styled.Text`
+  color: ${({theme}) => theme.COLORS.GREEN_2};
+  font-size: ${({theme}) => theme.FONT_SIZE.LG};
+  font-weight: bold;
+`;
+
+export const Value = styled.Text`
+  color: ${({theme}) => theme.COLORS.GREEN_2};
+  font-size: ${({theme}) => theme.FONT_SIZE.LG};
+  font-weight: bold;
 `;

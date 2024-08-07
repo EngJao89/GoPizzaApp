@@ -1,4 +1,6 @@
 import {ImageSourcePropType, TouchableOpacityProps} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+
 import {priceFormatter} from '../../utils/currencyFormater';
 import {
   Container,
@@ -22,8 +24,10 @@ type Props = TouchableOpacityProps & {
 };
 
 export function CardMenu({id, name, price, image, description}: Props) {
+  const navigation = useNavigation();
+
   return (
-    <Container key={id}>
+    <Container key={id} onPress={() => navigation.navigate('details')}>
       <Image source={image} />
 
       <Content>

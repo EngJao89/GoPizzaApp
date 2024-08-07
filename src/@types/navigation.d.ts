@@ -7,6 +7,7 @@ export declare global {
       signupadm: undefined;
       signupclient: undefined;
       menu: undefined;
+      details: undefined;
     }
   }
 }

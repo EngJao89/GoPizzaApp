@@ -6,6 +6,7 @@ import {SignInClient} from '../screens/SignInClient';
 import {SignUpAdm} from '../screens/SignUpAdm';
 import {SignUpClient} from '../screens/SignUpClient';
 import {Menu} from '../screens/Menu';
+import {Details} from '../screens/Details';
 
 const {Navigator, Screen} = createNativeStackNavigator();
 
@@ -72,6 +73,15 @@ export function AppRoutes() {
       <Screen
         name="menu"
         component={Menu}
+        options={{
+          statusBarStyle: 'auto',
+          statusBarTranslucent: true,
+          statusBarColor: 'transparent',
+        }}
+      />
+      <Screen
+        name="details"
+        component={Details}
         options={{
           statusBarStyle: 'auto',
           statusBarTranslucent: true,

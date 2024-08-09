@@ -3,14 +3,13 @@ import {styled} from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   padding-bottom: 0;
-  gap: 8px;
 `;
 
 export const BackContent = styled.View`
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 48px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 `;
 
 export const Image = styled.Image`
@@ -40,4 +39,27 @@ export const Subtitle = styled.Text`
   margin-left: 24px;
   margin-right: 36px;
   margin-top: 12px;
+`;
+
+export const Info = styled.View`
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 8px;
+  margin-top: 0px;
+`;
+
+export const ContentText = styled.Text`
+  color: ${({theme}) => theme.COLORS.GRAY_2};
+  font-size: ${({theme}) => theme.FONT_SIZE.MD};
+  font-weight: 400;
+  margin-left: 8px;
+  margin-right: 16px;
+`;
+
+export const SelectText = styled.Text`
+  color: ${({theme}) => theme.COLORS.GRAY_2};
+  font-size: ${({theme}) => theme.FONT_SIZE.LG};
+  font-weight: bold;
+  text-align: center;
 `;

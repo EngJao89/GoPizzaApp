@@ -45,7 +45,7 @@ export const Info = styled.View`
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   margin-top: 0px;
 `;
 
@@ -62,4 +62,11 @@ export const SelectText = styled.Text`
   font-size: ${({theme}) => theme.FONT_SIZE.LG};
   font-weight: bold;
   text-align: center;
+`;
+
+export const Footer = styled.View`
+  flex-direction: row;
+  margin-bottom: 48px;
+  justify-content: center;
+  align-items: center;
 `;

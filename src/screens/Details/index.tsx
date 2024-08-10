@@ -7,6 +7,7 @@ import {
   BackContent,
   Container,
   ContentText,
+  Footer,
   Image,
   Info,
   SelectText,
@@ -17,6 +18,7 @@ import {IconButton} from '../../components/IconButton';
 
 import pizza from '../../assets/products/margherita.png';
 import Divider from '../../components/Divider';
+import { Button } from '../../components/Button';
 
 export function Details() {
   const {COLORS} = useTheme();
@@ -42,7 +44,7 @@ export function Details() {
 
       <Info>
         <Icon name="stopwatch" color={COLORS.RED_1} size={24} />
-        <ContentText>30 Min</ContentText>
+        <ContentText>50 Min</ContentText>
         <Divider orientation="vertical" />
         <Icon
           name="fire-alt"
@@ -54,6 +56,10 @@ export function Details() {
       </Info>
 
       <SelectText>Selecione um tamanho</SelectText>
+
+      <Footer>
+        <Button style={{width: 370}} name="Pedir Pizza" color="SECONDARY" />
+      </Footer>
     </Container>
   );
 }

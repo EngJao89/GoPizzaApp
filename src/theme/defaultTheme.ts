@@ -7,9 +7,14 @@ export default {
     GRAY_2: '#572D31',
     GRAY_1: '#E1E1E6',
 
+    SECONDARY_900: '#572D31',
+    SECONDARY_500: '#7A6769',
+    SECONDARY_400: '#93797B',
+
     RED_2: '#B83341',
     RED_1: '#E03F50',
 
+    SHAPE: '#DCDCDC',
     WHITE: '#FFFFFF',
   },
   FONT_SIZE: {

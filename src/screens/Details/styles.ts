@@ -2,7 +2,8 @@ import {styled} from 'styled-components/native';
 
 export const Container = styled.View`
   flex: 1;
-  padding-bottom: 0;
+  padding: 0;
+  margin: 0;
 `;
 
 export const BackContent = styled.View`
@@ -28,6 +29,7 @@ export const Title = styled.Text`
   margin-left: 24px;
   margin-right: 16px;
   margin-top: 4px;
+  margin-bottom: 0px;
 `;
 
 export const Subtitle = styled.Text`
@@ -43,7 +45,7 @@ export const Subtitle = styled.Text`
 
 export const Info = styled.View`
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   margin-bottom: 24px;
   margin-top: 0px;
@@ -55,6 +57,14 @@ export const ContentText = styled.Text`
   font-weight: 400;
   margin-left: 8px;
   margin-right: 16px;
+`;
+
+export const SelectContent = styled.View`
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: 40px;
 `;
 
 export const SelectText = styled.Text`

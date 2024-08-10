@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {useTheme} from 'styled-components/native';
 import {ArrowLeft} from 'phosphor-react-native';
@@ -10,19 +11,24 @@ import {
   Footer,
   Image,
   Info,
+  SelectContent,
   SelectText,
   Subtitle,
   Title,
 } from './styles';
-import {IconButton} from '../../components/IconButton';
-
+import {PIZZA_TYPES} from '../../utils/pizzaTypes';
 import pizza from '../../assets/products/margherita.png';
+
+import {Button} from '../../components/Button';
 import Divider from '../../components/Divider';
-import { Button } from '../../components/Button';
+import {IconButton} from '../../components/IconButton';
+import {RadioButton} from '../../components/RadioButton';
 
 export function Details() {
   const {COLORS} = useTheme();
   const navigation = useNavigation();
+
+  const [size, setSize] = useState('');
 
   return (
     <Container>
@@ -57,8 +63,24 @@ export function Details() {
 
       <SelectText>Selecione um tamanho</SelectText>
 
+      <SelectContent>
+        {PIZZA_TYPES.map(item => (
+          <RadioButton
+            key={item.id}
+            price={item.price}
+            title={item.name}
+            onPress={() => setSize(item.id)}
+            selected={size === item.id}
+          />
+        ))}
+      </SelectContent>
+
       <Footer>
-        <Button style={{width: 370}} name="Pedir Pizza" color="SECONDARY" />
+        <Button
+          style={{width: 370}}
+          name="Adicionar Pedido"
+          color="SECONDARY"
+        />
       </Footer>
     </Container>
   );

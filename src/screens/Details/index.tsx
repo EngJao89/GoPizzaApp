@@ -80,7 +80,7 @@ export function Details() {
           style={{width: 370}}
           name="Adicionar Pedido"
           color="SECONDARY"
-          onPress={() => navigation.navigate('cart')}
+          onPress={() => navigation.navigate('menu')}
         />
       </Footer>
     </Container>

@@ -7,6 +7,7 @@ import {SignUpAdm} from '../screens/SignUpAdm';
 import {SignUpClient} from '../screens/SignUpClient';
 import {Menu} from '../screens/Menu';
 import {Details} from '../screens/Details';
+import {Cart} from '../screens/Cart';
 
 const {Navigator, Screen} = createNativeStackNavigator();
 
@@ -82,6 +83,15 @@ export function AppRoutes() {
       <Screen
         name="details"
         component={Details}
+        options={{
+          statusBarStyle: 'auto',
+          statusBarTranslucent: true,
+          statusBarColor: 'transparent',
+        }}
+      />
+      <Screen
+        name="cart"
+        component={Cart}
         options={{
           statusBarStyle: 'auto',
           statusBarTranslucent: true,

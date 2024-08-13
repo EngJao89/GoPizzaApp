@@ -8,6 +8,7 @@ export declare global {
       signupclient: undefined;
       menu: undefined;
       details: undefined;
+      cart: undefined;
     }
   }
 }

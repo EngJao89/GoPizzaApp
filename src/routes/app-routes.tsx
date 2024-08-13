@@ -1,4 +1,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {useTheme} from 'styled-components/native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import {Home} from '../screens/Home';
 import {SignInAdm} from '../screens/SignInAdm';
@@ -9,11 +12,55 @@ import {Menu} from '../screens/Menu';
 import {Details} from '../screens/Details';
 import {Cart} from '../screens/Cart';
 
-const {Navigator, Screen} = createNativeStackNavigator();
+const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
+
+function TabRoutes() {
+  const {COLORS, FONT_SIZE} = useTheme();
+
+  return (
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarShowLabel: true,
+        tabBarStyle: {
+          backgroundColor: COLORS.WHITE,
+          borderTopWidth: 0,
+        },
+        tabBarLabelStyle: {
+          fontSize: FONT_SIZE.SM,
+          color: COLORS.GRAY_3,
+        },
+        tabBarItemStyle: {
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+      }}>
+      <Tab.Screen
+        name="Menu"
+        component={Menu}
+        options={{
+          tabBarLabel: 'Cardápio',
+          tabBarIcon: () => (
+            <Icon name="restaurant-menu" color="gray" size={20} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Cart"
+        component={Cart}
+        options={{
+          tabBarLabel: 'Meus Pedidos',
+          tabBarIcon: () => <Icon name="request-page" color="gray" size={20} />,
+        }}
+      />
+    </Tab.Navigator>
+  );
+}
 
 export function AppRoutes() {
   return (
-    <Navigator
+    <Stack.Navigator
       initialRouteName="home"
       screenOptions={{
         headerShown: false,
@@ -21,83 +68,14 @@ export function AppRoutes() {
         statusBarTranslucent: true,
         statusBarColor: 'transparent',
       }}>
-      <Screen
-        name="home"
-        component={Home}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-
-      <Screen
-        name="adm"
-        component={SignInAdm}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-
-      <Screen
-        name="client"
-        component={SignInClient}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-
-      <Screen
-        name="signupadm"
-        component={SignUpAdm}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-
-      <Screen
-        name="signupclient"
-        component={SignUpClient}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-
-      <Screen
-        name="menu"
-        component={Menu}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-      <Screen
-        name="details"
-        component={Details}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-      <Screen
-        name="cart"
-        component={Cart}
-        options={{
-          statusBarStyle: 'auto',
-          statusBarTranslucent: true,
-          statusBarColor: 'transparent',
-        }}
-      />
-    </Navigator>
+      <Stack.Screen name="home" component={Home} />
+      <Stack.Screen name="adm" component={SignInAdm} />
+      <Stack.Screen name="client" component={SignInClient} />
+      <Stack.Screen name="signupadm" component={SignUpAdm} />
+      <Stack.Screen name="signupclient" component={SignUpClient} />
+      <Stack.Screen name="menu" component={TabRoutes} />
+      <Stack.Screen name="details" component={Details} />
+      <Stack.Screen name="cart" component={TabRoutes} />
+    </Stack.Navigator>
   );
 }

@@ -5,6 +5,7 @@ import {ListHeader} from '../../components/ListHeader';
 import {CardMenu} from '../../components/CardMenu';
 
 import {MENU} from '../../data/menu';
+import Divider from '../../components/Divider';
 
 export type Product = {
   id: string;
@@ -21,7 +22,10 @@ export function Menu() {
 
       <ScrollView>
         {MENU.map(item => (
-          <CardMenu key={item.id} {...item} />
+          <>
+            <CardMenu key={item.id} {...item} />
+            <Divider orientation="horizontal" />
+          </>
         ))}
       </ScrollView>
     </Container>

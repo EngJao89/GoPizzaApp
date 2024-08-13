@@ -1,8 +1,6 @@
 import {styled} from 'styled-components/native';
 
 export const Container = styled.TouchableOpacity`
-  border: 1px solid ${({theme}) => theme.COLORS.GRAY_3};
-  border-radius: 6px;
   padding: 24px;
   flex-direction: row;
   margin-top: 8px;

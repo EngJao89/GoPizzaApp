@@ -15,9 +15,10 @@ const Divider: React.FC<DividerProps> = ({
   dividerStyle,
 }) => {
   const dividerStyles = [
-    {width: orientation === 'horizontal' ? '100%' : width},
+    {width: orientation === 'horizontal' ? '90%' : width},
     {height: orientation === 'vertical' ? '100%' : width},
     {backgroundColor: color},
+    {marginLeft: 20},
     dividerStyle,
   ];
 

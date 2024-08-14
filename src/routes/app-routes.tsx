@@ -16,7 +16,7 @@ const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 function TabRoutes() {
-  const {COLORS, FONT_SIZE} = useTheme();
+  const {COLORS} = useTheme();
 
   return (
     <Tab.Navigator

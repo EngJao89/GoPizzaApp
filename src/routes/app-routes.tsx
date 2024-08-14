@@ -28,7 +28,7 @@ function TabRoutes() {
           borderTopWidth: 0,
         },
         tabBarLabelStyle: {
-          fontSize: FONT_SIZE.SM,
+          fontSize: 14,
           color: COLORS.GRAY_3,
         },
         tabBarItemStyle: {
